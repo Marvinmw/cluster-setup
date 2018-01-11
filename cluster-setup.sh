@@ -47,6 +47,7 @@ export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY
 #a problem when import tensorflow, please run them
 echo "/usr/local/cuda-8.0/lib64" >  /etc/ld.so.conf.d/nvidia.conf
 echo "/usr/local/cuda-8.0/lib" >  /etc/ld.so.conf.d/nvidia.conf
+export LC_ALL=C
 
 # install python packages for machine learning
 yes | pip2 install --upgrade pip
